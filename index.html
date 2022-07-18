@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>CineYoutu</title>
+</head>
+<body>
+    <header>
+        <h1>CineYoutu</h1>
+        <img src="./iconCine_img.png" alt="Icono" class="iconCine">
+    </header>
+    <main>
+        <h2>Peliculas 98% originales sacadas de youtube</h2>
+        <h3>¿Cual deseas ver?</h3> <!-- Quiero añadir un reloj aqui donde diga el momento del dia, por ejemplo "Cual deseas de ver la mañana / tarde / noche de hoy?" Recuerdamelo ;) -->
+        <div class="contenedorPelis">
+            <button class="containerPelis" onclick=venomMovie()>
+                <img src="./sddefault.jpg" alt="" class="pelisImg">
+                <h2>Venom</h2>
+                <p>Después de encontrar un cuerpo anfitrión en el periodista de investigación Eddie Brock, el simbionte alienígena debe enfrentarse a un nuevo enemigo, Carnage, el alter ego del asesino en serie Cletus Kasady.</p>
+            </button>
+            <button class="containerPelis" onclick=loganMovie()>
+                <img src="./logan.jpg" alt="" class="pelisImg">
+                <h2>Logan</h2>
+                <p>Es el año 2029. Los mutantes prácticamente han desparecido. Un cansado y abatido Logan vive retirado en la ciudad mexicana de El Paso. Es una sombra de lo que era. Se gana la vida conduciendo limusinas y...</p>
+            </button>
+            <button class="containerPelis" onclick=spiderMovie()>
+                <img src="./spidi.jpg" alt="" class="pelisImg">
+                <h2>Araña Homecoming</h2>
+                <p>Peter Parker decide pasar unas merecidas vacaciones en Europa junto a MJ, Ned y el resto de sus amigos. Sin embargo, Peter debe volver a ponerse el traje de Spider-Man cuando Nick Fury le encomienda una...</p>
+            </button>
+        </div>
+        <div class="containerIframe">
+            <img src="./iconCine_img.png" alt="" class="iconReproductor" id="iconReproductor">
+            <iframe src="" frameborder="0" id="iframePage" width="90%" height="720">
+            </iframe>
+        </div>        
+    </main>
+
+    <footer>
+        <div class="container-socialMedia">
+            <div><a target="_blank" href="https://www.instagram.com/bpvs2001/"><img src="./imgSocialMedia/instagram.png" class="iconSocial" alt=""></a></div>
+            <div><a target="_blank" href="https://www.facebook.com/andrew.pabuencevargas/"><img src="./imgSocialMedia/facebook.png" class="iconSocial" alt=""></a></div>
+            <div><a target="_blank" href="https://platzi.com/p/AndrePabu/"><img src="./imgSocialMedia/platzi-bd.png" class="iconSocial"></a></div>
+            <div><a target="_blank" href="https://github.com/AndrewPabuence"><img src="./imgSocialMedia/githup.png" class="iconSocial" alt=""></a></div>
+        </div>
+    </footer>
+</body>
+<script src="./index.js"></script>
+</html>
